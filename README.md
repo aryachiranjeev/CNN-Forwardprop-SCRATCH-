@@ -57,4 +57,6 @@ def conv_forward(X,maxpooling=False):
     print("CP1=",CP1)   
     #return CP1
     
-    
+ X=np.random.randint(255,size=(28,28))
+print("input_shape(X)=",X.shape)
+conv_forward(X,max_pooling=True)
